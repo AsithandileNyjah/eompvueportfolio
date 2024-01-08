@@ -1,0 +1,64 @@
+{
+        "home":[
+            {
+                "name": "Hi, I am Asithandile Tyulu",
+                "greeting": "I am an aspiring fullstack developer"
+            }
+        ],
+        "about":[
+            {
+                "paragraph": "I am an aspiring fullstack developer, a dynamic and passionate writer and former Community Coordinator & Tech Support at Fundza Literacy Trust, a South African non-profit organization that promotes literacy and a love of reading among young people. I am currently studying fullstack development at Life Choices Academy. I fell in love with coding in my role at Fundza, as I had to liaise with ICT service providers to ensure that the site was working well and offering the audience the best user experience. I then left the organisation to pursue software development studies to achieve my goal of being a software developer. In my spare time I like to reading, my favourite book is The Rapture of Canaan by Sheri Reynolds an hounarable mention would be, The Da Vinci Code by Dan Brown. I also love listen to music, Guillotine by Jon Bellion is my favourite song of all time. And last but not least, I love learning more about coding - I take it one language at a time.",
+                "ContactBTN": "Let's Connect"
+            }
+        ],
+        "projects":[
+            {
+                "projectsName": "E-Commerce Site",
+                "description": "This is my second e-commerce site, developed using HTML, CSS, Boostrap and JavaScript. The site is fully functional, and hosted on Netfliy",
+                "BTN1": "GitHub",
+                "BTN2": "Netlify",
+                "link1": "https://github.com/AsithandileNyjah/e-CommerceSite.git",
+                "link2": "https://profound-dango-271e7d.netlify.app/"
+            },
+            {
+                "projectsName": "E-Commerce Site 2",
+                "description": "This is my first e-commerce site. The site was made with HTML, CSS and Bootstrap.",
+                "BTN1": "GitHub",
+                "BTN2": "Netlify",
+                "link1": "https://github.com/AsithandileNyjah/eCommerceSite.git",
+                "link2": "https://stalwart-strudel-0dd00a.netlify.app/"
+            },
+            {
+                "projectsName": "First Portfolio",
+                "description": "This is my first developer portfolio. It was made with HTML, CSS and Bootstrap.",
+                "BTN1": "GitHub",
+                "BTN2": "Netlify",
+                "link1": "https://github.com/AsithandileNyjah/asithandilePortfolio.git",
+                "link2": "https://gregarious-crumble-79729d.netlify.app/"
+            },
+            {
+                "projectsName": "Interest Calculator",
+                "description": "This is a fully functional interest calculator, developed with HTML, CSS, Bootstrap and JavaScript.",
+                "BTN1": "GitHub",
+                "BTN2": "Netlify",
+                "link1": "https://github.com/AsithandileNyjah/interestAmount.git",
+                "link2": "https://astounding-stardust-83be5e.netlify.app/"
+            },
+            {
+                "projectsName": "",
+                "description": "",
+                "BTN1": "GitHub",
+                "BTN2": "Netlify",
+                "link1": "",
+                "link2": ""
+            },
+            {
+                "projectsName": "",
+                "description": "",
+                "BTN1": "GitHub",
+                "BTN2": "Netlify",
+                "link1": "",
+                "link2": ""
+            }
+        ]
+}

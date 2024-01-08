@@ -27,6 +27,8 @@ export default {
     
 }
 </script>
-<style lang="">
-    
+<style>
+.nav-link{
+    color: blue;
+}    
 </style>
