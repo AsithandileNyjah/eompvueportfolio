@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <div id="bar">
 <ul class="nav justify-content-center">
   <li class="nav-item">
-    <router-link class="nav-link active" to="/" aria-current="page">Home</router-link>
+    <router-link class="nav-link" to="/" aria-current="page">Home</router-link>
   </li>
   <li class="nav-item">
     <router-link class="nav-link" to="/about">About</router-link>
@@ -30,5 +30,8 @@ export default {
 <style>
 .nav-link{
     color: blue;
-}    
+}  
+#bar{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 </style>

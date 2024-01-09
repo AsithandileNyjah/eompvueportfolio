@@ -45,20 +45,130 @@
                 "link2": "https://astounding-stardust-83be5e.netlify.app/"
             },
             {
-                "projectsName": "",
-                "description": "",
+                "projectsName": "BMI Calculator",
+                "description": "I made a fully functional BMI calculator using JavaScript, HTML, CSS and Boostrap 5.",
                 "BTN1": "GitHub",
                 "BTN2": "Netlify",
-                "link1": "",
-                "link2": ""
+                "link1": "https://github.com/AsithandileNyjah/bmiCalculator.git",
+                "link2": "https://tubular-bienenstitch-de2ffa.netlify.app/"
             },
             {
-                "projectsName": "",
-                "description": "",
+                "projectsName": "Calculator",
+                "description": "I made a fully functional calculator with HTML, CSS, Boostrap and JavaScript.",
                 "BTN1": "GitHub",
                 "BTN2": "Netlify",
-                "link1": "",
-                "link2": ""
+                "link1": "https://github.com/AsithandileNyjah/calculator.git",
+                "link2": "https://golden-starlight-69d397.netlify.app/"
+            }
+        ],
+        "resume": [
+            {
+                "jobTitle": "Tech Support",
+                "company": "Fundza Literacy Trust",
+                "duties": "Uploading content on WordPress. Design covers for content. Troubleshoot the site and report to the team so they can relay the error to their ICT services providers.",
+                "duration": "Aug 2023 - Sept 2023"
+            },
+            {
+                "jobTitle": "Community Coordinator",
+                "company": "Fundza Literacy Trust",
+                "duties": "User generated data collection and analysis, both qualitative and quantitative. Writing comprehensive reports on data collected. Social media coordination and management. Liaise with external ICT services providers to ensure the site offers the best UX. Content production, writing articles, and short stories.",
+                "duration": "Apr 2019 - Jul 2023"
+            },
+            {
+                "jobTitle": "Maths & English Tutor",
+                "company": "YearBeyond",
+                "duties": "Tutoring math and English to grade 8 & 9 pupils. Analysing their reports cards, and asking them what they struggle with to see I can maximise my time with them and offer a beneficial program. Creating and following a weekly content plan.",
+                "duration": ""
+            }
+        ],
+        "education":[
+            {
+                "course": "Coding",
+                "school": "life Choices Academy",
+                "year": "2023 - in progress"
+            },
+            {
+                "course": "Cert. Leadership & Personal Development",
+                "school": "Stellenbosch University",
+                "year": "2018"
+            },
+            {
+                "course": "Fundamentals of Digital Marketing",
+                "school": "Google Skills Africa",
+                "year": "2019"
+            },
+            {
+                "course": "Organisational Time Management",
+                "school": "Nonprofit Ready",
+                "year": "2023"
+            },
+            {
+                "course": "Matric",
+                "school": "Intlanganiso Senior Secondary",
+                "year": "2015"
+            }
+        ],
+        "skills": [
+            {
+                "skill": "JavaScript",
+                "level": "Intermediate",
+                "skillImage": "https://www.imagevenue.com/ME17G3TQ" 
+            },
+            {
+                "skill": "HTML 5",
+                "level": "Advanced",
+                "skillImage": "https://www.imagevenue.com/ME17G3UC" 
+            },
+            {
+                "skill": "Bootstrap 5",
+                "level": "Intermediate",
+                "skillImage": "https://www.imagevenue.com/ME17G3U1" 
+            },
+            {
+                "skill": "Git",
+                "level": "Intermediate",
+                "skillImage": "https://www.imagevenue.com/ME17G3VB" 
+            },
+            {
+                "skill": "CSS3",
+                "level": "Intermediate",
+                "skillImage": "https://www.imagevenue.com/ME17G3UD" 
+            },
+            {
+                "skill": "VueJS",
+                "level": "Beginner",
+                "skillImage": "https://www.imagevenue.com/ME17G3UV" 
+            },
+            {
+                "skill": "Content Writing/Production",
+                "level": "Advanced",
+                "skillImage": "https://www.imagevenue.com/ME17G3V9" 
+            }
+        ],
+        "testimonials":[
+            {
+                "fullName": "Damon Raffels",
+                "testimony": "Asithandile is a dedicated worker with an infectious personality and excellent people skills. He has strong resolve, works well with others and keeps an open mind to different points of view.",
+                "relationship": "Colleauge",
+                "picture": "https://www.imagevenue.com/ME17G463"
+            },
+            {
+                "fullName": "Matthew Brown",
+                "testimony": "Asithandile is an eager, humble and hardworking individual. He always strives for excellence. Having a creative mindset, which helps him overcome many obstacles and challenges.",
+                "relationship": "Lecturer",
+                "picture": "https://imgur.com/ES18anh" 
+            },
+            {
+                "fullName": "Naeema Omar",
+                "testimony": "I believe Asithandile is a great asset for any company that chooses to work with him given that on top of his technical skills, he's also sociable, deeply introspective and has a high emotional intelligence making him a great colleague to have.",
+                "relationship": "Colleauge",
+                "picture": "https://imgur.com/a/aCKfhiR" 
+            },
+            {
+                "fullName": "Thandeka Sineli",
+                "testimony": "Asithandile is an exceptionally hardworking individual with a creative and analytical mind. His ability to approach challenges with an open mind and find innovative solutions is truly impressive. Working with Asithandile is a rewarding experience, as his dedication and problem-solving skills contribute immensely to the success of any project.",
+                "relationship": "Colleauge",
+                "picture": "https://i.postimg.cc/wT88yZwP/20231009-135121-1.jpg" 
             }
         ]
 }

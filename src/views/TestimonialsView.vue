@@ -1,40 +1,51 @@
 <template lang="">
-    <div>
-        <body>
-  <div class = container>
-        <div class = card>
-            <div class = image>
-                <img src =https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg>
-            </div>
-            <div class = content>
-                <h3>This is content</h3>
-                <p>DIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
-            </div>
-        </div>    
-        </div>
-    </body>
-    </div>
+      <div v-for="x of $store.state.testimonials" v-bind:key="x.testimonials" class = container>
+    <div class = card>
+      <div class = image>
+        <img href = "#" :src = x.picture>
+      </div>
+      <div class = content>
+        <h3>{{x.fullName}}</h3>
+        <p id="test">{{x.testimony}}</p>
+        <h6>{{x.relationship}}</h6>
+      </div>
+    </div>    
+  </div>
 </template>
 <script>
 export default {
-    
+    components : {
+
+    },
+    methods : {
+      fetchTestimonials : function(){
+      // this.$store.dispatch('fetchTestimonials')
+      this.$store.dispatch('fetchTestimonials')
+    }
+  },
+  mounted(){
+    this.fetchTestimonials()
+  }
 }
 </script>
-<style>
+
+<style scoped>
 .container {
   position : relative;
   width : 1100px;
   display : flex;
   align-items : center;
   justify-content : center;
-  padding : 30px;  
+  padding : 30px; 
+  margin-top: 10px;
 }
 
 .container .card {
+  position: relative;
   max-width : 300px;
   height : 215px;  
   background-color : #fff;
-  margin : 75px;
+  margin : 30px 10px;
   padding : 20px 15px;
   
   display : flex;
@@ -48,7 +59,7 @@ export default {
 }
 
 
-.container .card .image {
+.container .card .image{
   position : relative;
   width : 260px;
   height : 260px;
@@ -74,6 +85,7 @@ export default {
   visibility : hidden;
   opacity : 0;
   transition : 0.3s ease-in-out;
+  font-size: smaller;
     
 }
 
@@ -83,5 +95,12 @@ export default {
    opacity : 1;
    transition-delay: 0.2s;
   
-}   
+}
+#test{
+  font-size: x-small;
+}
+img {
+  height: 200px;
+  width: 400px;
+}
 </style>
