@@ -2,22 +2,22 @@
     <div id="bar">
 <ul class="nav justify-content-center">
   <li class="nav-item">
-    <router-link class="nav-link" to="/" aria-current="page">Home</router-link>
+    <router-link class="nav-link" to="/" aria-current="page"><p>Home</p></router-link>
   </li>
   <li class="nav-item">
-    <router-link class="nav-link" to="/about">About</router-link>
+    <router-link class="nav-link" to="/about"><p>About</p></router-link>
   </li>
   <li class="nav-item">
-    <router-link class="nav-link" to="/resume">Resume</router-link>
+    <router-link class="nav-link" to="/resume"><p>Resume</p></router-link>
   </li>
   <li class="nav-item">
-    <router-link class="nav-link" to="/projects">Projects</router-link>
+    <router-link class="nav-link" to="/projects"><p>Projects</p></router-link>
   </li>
   <li class="nav-item">
-    <router-link class="nav-link" to="testimonials">Testimonials</router-link>
+    <router-link class="nav-link" to="testimonials"><p>Testimonials</p></router-link>
   </li>
   <li class="nav-item">
-    <router-link class="nav-link" to="/contact">Contact</router-link>
+    <router-link class="nav-link" to="/contact"><p>Contact</p></router-link>
   </li>
 </ul>
     </div>
@@ -27,10 +27,17 @@ export default {
     
 }
 </script>
-<style>
+<style scoped>
 .nav-link{
-    color: blue;
+    color: black;
+}
+p{
+  color: black;
+  font-size: large;
 }  
+p:hover{
+  color: aqua;
+}
 #bar{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
