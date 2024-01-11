@@ -1,17 +1,38 @@
 <template>
-  <div id="navBar">
-    <NavBar/>
+  <div>
+      <div id="navBar">
+        <NavBar/>
+      </div>
+      <div>
+        <Footer/>
+      </div>
+      <div>
+        <Spinner/>
+      </div>
+      <router-view/>
   </div>
-  <router-view/>
 </template>
 
 <script>
   import NavBar from './components/NavBar.vue';
+  import Footer from './components/Footer.vue';
+  import Spinner from './components/Spinner.vue';
 
 export default {
   components: {
-    NavBar
+    NavBar, Footer, Spinner
   },
+  data() {
+    return {
+      showSpinner: true
+    };
+  },
+  created() {
+    // Hide the spinner after 1.5 seconds
+    setTimeout(() => {
+      this.showSpinner = false;
+    }, 1500);
+  }
 }
 </script>
 

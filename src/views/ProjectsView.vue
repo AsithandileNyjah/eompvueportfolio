@@ -1,6 +1,9 @@
 <template lang="">
 <div id="cards" class="container-fluid">
-    <div v-for="x of $store.state.projects" v-bind:key="x.projects">
+  <div class="container">
+    <div class="row">
+      <div v-for="x of $store.state.projects" v-bind:key="x.projects" class="col-lg-4">
+        
         <div class="card" style="width: 18rem;">
             <img id="pic" :src=x.proImg class="card-img-top">
             <div class="card-body">
@@ -11,6 +14,8 @@
             </div>
         </div>
     </div>
+    </div>
+  </div>
 </div>
     
 </template>
@@ -29,13 +34,31 @@ mounted(){
 }
 }
 </script>
+
+
 <style>
-#cards{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px
+#pic {
+  height: 100px;
 }
-#pic{
-    height: 200px;
+.card-text{
+  font-size: smaller;
+}
+.card-title{
+  font-size: medium;
+}
+
+.card-body {
+  height: 11rem;
+}
+
+/* Add margin to the bottom of each card */
+.card {
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+/* Add margin to the top of each button */
+.btn {
+  font-size: x-small;
 }
 </style>
