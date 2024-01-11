@@ -4,12 +4,10 @@
         <NavBar/>
       </div>
       <div>
-        <Footer/>
-      </div>
-      <div>
         <Spinner/>
       </div>
       <router-view/>
+        <Footer/>
   </div>
 </template>
 
