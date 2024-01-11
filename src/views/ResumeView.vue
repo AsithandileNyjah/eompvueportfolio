@@ -1,5 +1,5 @@
 <template lang="">
-<div id="content" style="height: 100vh">
+<div id="content">
   <div class="container-fluid">
     <h1 style="text-align: center">Work Experience</h1>
     <div class="row">
@@ -71,8 +71,5 @@ export default {
 .custom-card-text,
 .custom-card-paragraph {
   margin-bottom: 10px; 
-}
-#content{
-  height: max-content;
 }
 </style>

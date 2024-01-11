@@ -35,8 +35,6 @@
   
 <style>
 footer{
-    position: fixed;
-    margin-top: 1000px;
     bottom: 0;
     width: 100%;
     background-color: #333;
