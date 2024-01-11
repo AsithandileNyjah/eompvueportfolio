@@ -3,8 +3,13 @@
 <div id="about" class="row" >
         <div class="clearfix">
             <img :src=$store.state.about.aboutPic class="col-md-4 float-md-end mb-3 ms-md-3" alt="...">
-
-            <p id="ret">{{$store.state.about.paragraph}}</p>
+            <div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <p id="ret">{{$store.state.about.paragraph}}</p>
+    </div>
+  </div>
+  </div>
         </div>
         <a :href=$store.state.about.WhatsApp class="float" target="_blank">
             <i class="fa fa-whatsapp my-float"></i>

@@ -6,7 +6,9 @@ export default createStore({
     home:[],
     testimonials:[],
     about:[],
-    projects:[]
+    projects:[],
+    resume: [],
+    education: []
   },
   getters: {
   },
@@ -22,6 +24,12 @@ export default createStore({
       },
       projectData(state, info){
         state.projects = info
+      },
+      resumeData(state, info){
+        state.resume = info
+      },
+      educationData(state, info){
+        state.education = info
       }
   },
   actions: {
@@ -52,6 +60,20 @@ export default createStore({
       .then(x =>{
         console.log(x.data.projects);
         context.commit('projectData', x.data.projects)
+      })
+    },
+    fetchResume(context){
+      axios.get("https://asithandilenyjah.github.io/jsonFileData/")
+      .then(x => {
+        console.log(x.data.resume);
+        context.commit('resumeData', x.data.resume)
+      })
+    },
+    fetchEducation(context){
+      axios.get("https://asithandilenyjah.github.io/jsonFileData/")
+      .then(x =>{
+        console.log(x.data.education);
+        context.commit('educationData', x.data.education)
       })
     }
   },
