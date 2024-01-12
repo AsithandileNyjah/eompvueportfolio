@@ -1,5 +1,8 @@
 <template lang="">
 <div id="content">
+  <div id="btn">
+    <a class="btn btn-primary" href="https://www.canva.com/design/DAFuJJnXVtQ/mmmN0OUAsrZgisX5xNi0NA/edit?utm_content=DAFuJJnXVtQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" role="button">Download My Resume</a>
+  </div>
   <div class="container-fluid">
     <h1 style="text-align: center">Work Experience</h1>
     <div class="row">
@@ -103,5 +106,8 @@ img {
 }
 #skills {
   margin-top: 5px;
+}
+#btn{
+  text-align: center;
 }
 </style>
