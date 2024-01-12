@@ -7,7 +7,7 @@
   <div class="row">
     <div id="btns" class="col">
       <p id="ret">{{$store.state.about.paragraph}}</p>
-      <button type="button" class="btn btn-success"><router-link to="/contact">Contact</router-link></button>
+      <button type="button" class="btn btn-danger"><router-link to="/contact">Contact</router-link></button>
     </div>
     <div class="social-icons">
         <a href="https://www.linkedin.com/in/asithandile-tyulu-a12006171/" data-location="LinkedIn" class="fa fa-linkedin"></a>
@@ -125,6 +125,5 @@ a{
 button {
   margin: 5px;
   margin-left: 5px;
-  text-decoration: none;
 }
 </style>
