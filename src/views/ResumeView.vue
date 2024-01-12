@@ -32,6 +32,23 @@
 </div>
 </div>
 
+<div>
+  <div class="container-fluid">
+    <h1 style="text-align: center">Skills</h1>
+    <div class="row">
+      <div v-for="x of $store.state.skills" :key="x.skills" id="skills" class="col-lg-3">
+        <div class="card" style="width: 18rem;">
+          <img :src=x.skillImage class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{x.skill}}</h5>
+            <a href="#" class="btn btn-primary">{{x.level}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </template>
 <script>
 export default {
@@ -46,14 +63,23 @@ export default {
           console.log('Fetched education data:', educationData);
         })
         .catch((error) => {
-          // Handle errors
-          console.error('Error fetching education data:', error);
+          console.error('Unexpected error', error);
         });
+    },
+    fetchSkills: function(){
+      this.$store.dispatch('fetchSkills')
+      .then((skillsData) => {
+        console.log('skills', skillsData);
+      })
+      .catch((error) => {
+        console.error('Unexpected error', error)
+      })
     }
   },
   mounted() {
     this.fetchResume();
     this.fetchEducation();
+    this.fetchSkills()
   }
 }
 </script>
@@ -71,5 +97,11 @@ export default {
 .custom-card-text,
 .custom-card-paragraph {
   margin-bottom: 10px; 
+}
+img {
+  height: 200px;
+}
+#skills {
+  margin-top: 5px;
 }
 </style>
