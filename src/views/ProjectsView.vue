@@ -39,6 +39,7 @@ mounted(){
 <style>
 #pic {
   height: 100px;
+  border-radius: 0%;
 }
 .card-text{
   font-size: smaller;
@@ -51,13 +52,11 @@ mounted(){
   height: 11rem;
 }
 
-/* Add margin to the bottom of each card */
 .card {
   margin-bottom: 20px;
   padding: 0px;
 }
 
-/* Add margin to the top of each button */
 .btn {
   font-size: x-small;
 }
