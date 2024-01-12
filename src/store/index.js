@@ -8,7 +8,8 @@ export default createStore({
     about:[],
     projects:[],
     resume: [],
-    education: []
+    education: [],
+    skills: []
   },
   getters: {
   },
@@ -30,6 +31,9 @@ export default createStore({
       },
       educationData(state, info){
         state.education = info
+      },
+      skillsData(state, info){
+        state.skills = info
       }
   },
   actions: {
@@ -74,6 +78,13 @@ export default createStore({
       .then(x =>{
         console.log(x.data.education);
         context.commit('educationData', x.data.education)
+      })
+    },
+    fetchSkills(context){
+      axios.get("https://asithandilenyjah.github.io/jsonFileData/")
+      .then(x => {
+        console.log(x.data.skills);
+        context.commit('skillsData', x.data.skills)
       })
     }
   },

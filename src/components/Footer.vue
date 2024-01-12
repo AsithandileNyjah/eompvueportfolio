@@ -24,7 +24,7 @@
     methods: {
       getData() {
         // Get the current year
-        const currentYear = new Date().getFullYear();
+        let currentYear = new Date().getFullYear();
   
         // Set the current year to the data property
         this.currentYear = currentYear.toString();
@@ -35,6 +35,7 @@
   
 <style>
 footer{
+    margin-top: 5px;
     bottom: 0;
     width: 100%;
     background-color: #333;
