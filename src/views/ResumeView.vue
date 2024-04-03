@@ -130,8 +130,15 @@ img {
     position: relative;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
     transition: box-shadow 0.3s ease-in-out;
+    margin-left: 3rem;
+    margin-top: 1rem;
   }
 .cards:hover {
+    animation: heartbeat 1s infinite; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  }
+
+.card:hover {
     animation: heartbeat 1s infinite; 
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   }
@@ -145,7 +152,9 @@ img {
 .card {
     perspective: 1000px;
     position: relative;
-    height: 500px;
+    height: 350px;
+    margin-left: 3rem;
+    margin-top: 2rem
   }
 
   .card-inner {
@@ -195,4 +204,18 @@ img {
     font-size: 1rem;
     text-align: center;
   }
+
+  @media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .cards {
+      margin-left: 0px;
+      margin-top: 2rem
+    }
+    .card {
+      margin-left: 0px;
+      margin-top: 1rem
+    }
+}
 </style>

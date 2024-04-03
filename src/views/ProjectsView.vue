@@ -4,7 +4,7 @@
     <div class="row">
       <div v-for="x of $store.state.projects" v-bind:key="x.projects" class="col-lg-4">
         
-        <div class="card" style="width: 18rem;">
+        <div class="cards" style="width: 18rem;">
             <img id="pic" :src=x.proImg class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">{{x.projectsName}}</h5>
@@ -38,7 +38,7 @@ mounted(){
 
 <style>
 #pic {
-  height: 100px;
+  height: 200px;
   border-radius: 0%;
 }
 .card-text{
@@ -52,16 +52,39 @@ mounted(){
   height: 11rem;
 }
 
-.card {
+.cards {
   margin-bottom: 20px;
   padding: 0px;
 }
 
 .btn {
   font-size: x-small;
+  text-align: center;
 }
 
 #cards{
   margin-top: 2rem;
 }
+
+.cards {
+    width: 18rem;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+    margin-left: 3rem;
+    margin-top: 1rem;
+  }
+.cards:hover {
+    animation: heartbeat 1s infinite; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  }
+
+@keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+  }
 </style>

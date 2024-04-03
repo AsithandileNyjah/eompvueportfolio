@@ -57,7 +57,9 @@ form {
     margin: 0 auto;
     font-family: 'Arial', sans-serif;
 }
-
+h3 {
+    font-family: "Audiowide", sans-serif !important;
+}
 label {
     display: block;
     margin-bottom: 10px;

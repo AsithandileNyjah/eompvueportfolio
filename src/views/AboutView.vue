@@ -1,26 +1,33 @@
 <template lang="">
-
-<div id="about" class="row" >
-        <div class="clearfix">
-            <img :src=$store.state.about.aboutPic class="col-md-4 float-md-end mb-3 ms-md-3" alt="...">
-            <div class="container text-center">
-  <div class="row">
-    <div id="btns" class="col">
-      <p id="ret">{{$store.state.about.paragraph}}</p>
-      <button id="seeMore" @click="goToProjects">See More My Work</button>
+  <div id="about" class="container overflow-hidden">
+  <div class="row gx-5">
+    <div class="col">
+     <div id="ret" class="p-3 border bg-transparent d-flex flex-column align-items-center">    <h6>Profile</h6>
+    <img id="smallPic" :src="$store.state.about.aboutPic" class="mb-3" alt="...">
+    <p>
+        D.O.B: 10 March 1998 <br>
+        Gender: Male <br>
+        Languages: isiXhosa (Home Language) <br>
+        English (Fluent) <br>
+        seTswana (Conversational) <br>
+        Zulu (Conversational) <br>
+        Location: Khayelitsha, Cape Town
+    </p>
+     </div>
     </div>
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/asithandile-tyulu-a12006171/" data-location="LinkedIn" class="fa fa-linkedin"></a>
-        <a href="https://github.com/AsithandileNyjah" data-location="GitHub" class="fa fa-github"></a>
-    </div>
-  </div>
-        <a :href=$store.state.about.WhatsApp class="float" target="_blank">
+    <div class="col">
+      <div id="ret" class="p-3 border bg-transparent">
+        {{$store.state.about.paragraph}}
+        <br>
+      <h5>Connect With Me</h5>
+      <a :href=$store.state.about.WhatsApp class="float" target="_blank">
             <i class="fa fa-whatsapp my-float"></i>
         </a>
+        <button id="seeMore" @click="goToProjects">See My Work</button>
+</div>
+    </div>
   </div>
-  </div>
-  </div>
-
+</div>
 </template>
 <script>
 export default{
@@ -41,8 +48,13 @@ export default{
 }
 
 </script>
-<style>
+<style scoped>
 
+#smallPic{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
 .float{
 	width:60px;
 	height:60px;
@@ -66,12 +78,16 @@ img {
 #about{
     margin-top: 5rem;
 }
+
+h{
+  font-family: "Audiowide", sans-serif !important;
+}
 #ret{
     margin-left: 5px;
 }
 
 #ret:hover{
-  color: aqua;
+  color: aqua ;
 }
 .social-icons {
             list-style: none;
@@ -130,6 +146,7 @@ a{
 }
 button {
   margin: 5px;
-  margin-left: 5px;
+  margin-left: 0px;
+  text-align: center;
 }
 </style>

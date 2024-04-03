@@ -9,13 +9,13 @@
     <router-link class="nav-link" to="/about"><p>About</p></router-link>
   </li>
   <li class="nav-item">
-    <router-link class="nav-link" to="/resume"><p>Resume</p></router-link>
+    <router-link class="nav-link" to="/resume"><p>Education & Work Experience</p></router-link>
   </li>
   <li class="nav-item">
     <router-link class="nav-link" to="/projects"><p>Projects</p></router-link>
   </li>
   <li class="nav-item">
-    <router-link class="nav-link" to="testimonials"><p>Testimonials</p></router-link>
+    <router-link class="nav-link" to="testimonials"><p>Reviews</p></router-link>
   </li>
   <li class="nav-item">
     <router-link class="nav-link" to="/contact"><p>Contact</p></router-link>

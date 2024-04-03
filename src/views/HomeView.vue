@@ -16,6 +16,8 @@
 </template>
 
 <style >
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -57,7 +59,7 @@ p, h1, h2, h3, h4, h5, h6, a, button {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #greetingAni{
-  font-family: 'Trebuchet MS';
+  font-family: "Audiowide", sans-serif !important;
   font-size: xx-large;
   margin-top: 10rem;
   margin-left: 2rem;
