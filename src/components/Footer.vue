@@ -8,7 +8,6 @@
       <ul class="social-icons">
         <li><a href="https://www.linkedin.com/in/asithandile-tyulu-a12006171/" data-location="LinkedIn" class="fa fa-linkedin"></a></li>
         <li><a href="https://github.com/AsithandileNyjah" data-location="GitHub" class="fa fa-github"></a></li>
-        <li><a href="https://twitter.com/ThandileTyulu" data-location="Twitter" class="fa fa-twitter"></a></li>
       </ul>
     </footer>
   </template>
@@ -37,7 +36,7 @@
   
 <style>
 footer{
-    margin-top: 5px;
+    margin-top: 8rem;
     bottom: 0;
     width: 100%;
     background-color: #333;

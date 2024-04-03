@@ -75,6 +75,7 @@ img{
   position : relative;
   width : 260px;
   height : 260px;
+  box-shadow: black;
   
   top : -40%;
   left: 8px;

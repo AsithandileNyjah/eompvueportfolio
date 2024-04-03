@@ -7,12 +7,11 @@
   <div class="row">
     <div id="btns" class="col">
       <p id="ret">{{$store.state.about.paragraph}}</p>
-      <button type="button" class="btn btn-danger"><router-link to="/contact">Contact</router-link></button>
+      <button id="seeMore" @click="goToProjects">See More My Work</button>
     </div>
     <div class="social-icons">
         <a href="https://www.linkedin.com/in/asithandile-tyulu-a12006171/" data-location="LinkedIn" class="fa fa-linkedin"></a>
         <a href="https://github.com/AsithandileNyjah" data-location="GitHub" class="fa fa-github"></a>
-        <a href="https://twitter.com/ThandileTyulu" data-location="Twitter" class="fa fa-twitter"></a>
     </div>
   </div>
         <a :href=$store.state.about.WhatsApp class="float" target="_blank">
@@ -31,6 +30,9 @@ export default{
   methods : {
     fetchAbout : function(){
       this.$store.dispatch('fetchAbout')
+    },
+    goToProjects() {
+      this.$router.push('/projects');
     }
   },
   mounted(){
@@ -66,6 +68,10 @@ img {
 }
 #ret{
     margin-left: 5px;
+}
+
+#ret:hover{
+  color: aqua;
 }
 .social-icons {
             list-style: none;

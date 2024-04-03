@@ -1,15 +1,18 @@
 <template>
-
-<div id="intro" class="d-flex flex-column justify-content-center w-100 h-100">
-<div class="d-flex flex-column justify-content-center align-items-center">
-  <img id="img" :src=$store.state.home.profilePicture >
-  <div class="btn-group my-5">
-    <p class="btn btn-outline-light" aria-current="page">{{$store.state.home.name}}</p>
-    <p class="btn btn-outline-light">{{$store.state.home.greeting}}</p>
+<div class="d-flex flex-column justify-content-center w-100 h-100">
+  <div class="row">
+    <div id="greetingAni" class="col">
+      {{$store.state.home.name}}
+    </div>
+    <div id="greetingAni" class="col order-5">
+      {{$store.state.home.greeting}}
+    </div>
+    <div id="hIMG" class="col order-1">
+      <img id="img" :src=$store.state.home.profilePicture >
+      <button id="seeMore" @click="goToAbout">See More About Me</button>
+    </div>
   </div>
 </div>
-</div>
-
 </template>
 
 <style >
@@ -18,6 +21,14 @@ body {
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
+}
+
+#seeMore{
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  margin-left: 8rem;
+  margin-top: 5px
 }
 
 @keyframes gradient {
@@ -42,20 +53,36 @@ body {
   border-bottom: solid blueviolet;
 }
 
+p, h1, h2, h3, h4, h5, h6, a, button {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#greetingAni{
+  font-family: 'Trebuchet MS';
+  font-size: xx-large;
+  margin-top: 10rem;
+  margin-left: 2rem;
+}
+#greetingAni:hover{
+  color: aqua;
+}
+
+#hIMG {
+  margin-top: 5rem;
+}
 </style>
 
 <script>
-export default{
-  components : {
-
-  },
-  methods : {
-    fetchHomeData : function(){
-      this.$store.dispatch('fetchHomeData')
+export default {
+  methods: {
+    fetchHomeData() {
+      this.$store.dispatch('fetchHomeData');
+    },
+    goToAbout() {
+      this.$router.push('/about');
     }
   },
-  mounted(){
-    this.fetchHomeData()
+  mounted() {
+    this.fetchHomeData();
   }
 }
 </script>

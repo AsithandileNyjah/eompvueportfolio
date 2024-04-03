@@ -1,6 +1,7 @@
 <template>
-    <div id="bar">
-<ul class="nav justify-content-center">
+  <div class="collapse" id="navbarToggleExternalContent">
+  <div class="bg-dark p-4">
+    <ul class="nav justify-content-center">
   <li class="nav-item">
     <router-link class="nav-link" to="/" aria-current="page"><p>Home</p></router-link>
   </li>
@@ -20,7 +21,15 @@
     <router-link class="nav-link" to="/contact"><p>Contact</p></router-link>
   </li>
 </ul>
-    </div>
+  </div>
+</div>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
 </template>
 <script>
 export default {
@@ -28,11 +37,12 @@ export default {
 }
 </script>
 <style scoped>
+
 .nav-link{
     color: black;
 }
 p{
-  color: black;
+  color: whitesmoke;
   font-size: large;
 }  
 p:hover{

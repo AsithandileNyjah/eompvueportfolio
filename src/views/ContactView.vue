@@ -29,12 +29,11 @@
                 <div class="col">
                     <h3>For Fast Replies</h3>
                     <div class="contact">
-                        <a href="https://www.linkedin.com/in/asithandile-tyulu-a12006171/" data-location="LinkedIn" class="fa fa-linkedin"></a>
+        <a href="https://www.linkedin.com/in/asithandile-tyulu-a12006171/" data-location="LinkedIn" class="fa fa-linkedin"></a>
         <a href="https://github.com/AsithandileNyjah" data-location="GitHub" class="fa fa-github"></a>
-        <a href="https://twitter.com/ThandileTyulu" data-location="Twitter" class="fa fa-twitter"></a>
-        <a class="fa fa-phone"> 081 899 3523</a>
+        <a class="fa fa-phone"> 079 345 1529</a>
         <a class="fa fa-envelope"> atyuluu@gmail.com</a>
-        <a class="fa fa-map-pin"> Cape Town</a>
+        <a class="fa fa-map-pin"> Khayelitsha, Cape Town</a>
                     </div>
                 </div>
                 <div class="col">

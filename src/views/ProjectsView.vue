@@ -60,4 +60,8 @@ mounted(){
 .btn {
   font-size: x-small;
 }
+
+#cards{
+  margin-top: 2rem;
+}
 </style>
