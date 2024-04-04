@@ -37,6 +37,10 @@ export default {
 }
 </script>
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+p{
+  font-family: Orbitron
+}
 
 .nav-link{
     color: black;
@@ -48,7 +52,31 @@ p{
 p:hover{
   color: aqua;
 }
-#bar{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+@media screen and (max-width: 600px) {
+  .collapse {
+    width: 120%;
+  }
+  .collapse{
+    margin-left: -2rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .collapse {
+    width: 120%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    width: 120%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  nav {
+    width: 120%;
+  }
 }
 </style>

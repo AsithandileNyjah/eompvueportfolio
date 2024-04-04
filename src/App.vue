@@ -4,7 +4,6 @@
         <NavBar/>
       </div>
       <div>
-        <Spinner/>
       </div>
       <router-view/>
         <Footer/>

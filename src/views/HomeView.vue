@@ -8,7 +8,7 @@
       {{$store.state.home.greeting}}
     </div>
     <div id="hIMG" class="col order-1">
-      <img id="img" :src=$store.state.home.profilePicture >
+      <img id="img" src="https://iili.io/JNE9thN.th.png">
       <button id="seeMore" @click="goToAbout">See More About Me</button>
     </div>
   </div>
@@ -17,6 +17,33 @@
 
 <style >
 @import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+@keyframes fallIn {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .col {
+    animation: fallIn 1s ease forwards;
+  }
+
+  .col:nth-child(2) {
+    animation-delay: 0.3s; 
+  }
+
+  .col:nth-child(3) {
+    animation-delay: 0.3s; 
+  }
+
+  #hIMG {
+    animation-delay: 0.3s 
+  }
 
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -70,6 +97,11 @@ p, h1, h2, h3, h4, h5, h6, a, button {
 
 #hIMG {
   margin-top: 5rem;
+}
+@media screen and (max-width: 600px) {
+  #seeMore {
+    margin-left: 7.5rem;
+  }
 }
 </style>
 

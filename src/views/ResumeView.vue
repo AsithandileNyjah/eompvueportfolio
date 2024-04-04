@@ -3,9 +3,11 @@
   <div class="container-fluid">
     <h1 style="text-align: center">Work Experience</h1>
     <div id="btn">
-    <a class="btn btn-primary" href="https://www.canva.com/design/DAFuJJnXVtQ/mmmN0OUAsrZgisX5xNi0NA/edit?utm_content=DAFuJJnXVtQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" role="button">See My Resume</a>
-  </div>
-    <div class="row">
+  <a class="btn btn-primary" href="https://www.canva.com/design/DAFuJJnXVtQ/mmmN0OUAsrZgisX5xNi0NA/edit?utm_content=DAFuJJnXVtQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" role="button">
+    <i class="fas fa-download"></i> See My Resume
+  </a>
+</div>
+    <div class="row justify-content-center">
   <div v-for="x of $store.state.resume" :key="x.resume" class="col-lg-4">
     <div class="card" style="width: 18rem;">
       <div class="card-inner">
@@ -33,7 +35,7 @@
 
 <div class="container-fluid">
     <h1 style="text-align: center">Education</h1>
-    <div class="row">
+    <div class="row justify-content-center">
         <div v-for="x of $store.state.education" :key="x.education" class="col-lg-4">
             <div class="cards" style="width: 18rem;">
                 <ul class="list-group list-group-flush">
@@ -50,8 +52,8 @@
 <div>
   <div class="container-fluid">
     <h1 style="text-align: center">Skills</h1>
-    <div class="row">
-      <div v-for="x of $store.state.skills" :key="x.skills" id="skills" class="col-lg-3">
+    <div class="row justify-content-center">
+      <div v-for="x of $store.state.skills" :key="x.skills" id="skills" class="col-lg-4">
         <div class="cards" style="width: 18rem;">
           <img :src=x.skillImage class="card-img-top" alt="...">
           <div class="card-body">
@@ -205,17 +207,17 @@ img {
     text-align: center;
   }
 
-  @media screen and (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
-    .cards {
-      margin-left: 0px;
-      margin-top: 2rem
-    }
-    .card {
-      margin-left: 0px;
-      margin-top: 1rem
-    }
+@media screen and (max-width: 600px) {
+  body {
+      font-size: 14px;
+  }
+  .cards {
+    margin-left: 3rem;
+    margin-top: 2rem
+  }
+  .card {
+    margin-left: 3rem;
+    margin-top: 1rem
+  }
 }
 </style>

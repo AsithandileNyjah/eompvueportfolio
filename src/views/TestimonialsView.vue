@@ -109,4 +109,9 @@ img{
    transition-delay: 0.2s;
   
 }
+@media screen and (max-width: 600px) {
+  #cards {
+    margin-left: 0.2rem;
+  }
+}
 </style>

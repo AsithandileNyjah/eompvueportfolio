@@ -1,7 +1,7 @@
 <template lang="">
 <div id="cards" class="container-fluid">
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       <div v-for="x of $store.state.projects" v-bind:key="x.projects" class="col-lg-4">
         
         <div class="cards" style="width: 18rem;">
@@ -43,9 +43,11 @@ mounted(){
 }
 .card-text{
   font-size: smaller;
+  margin-left: 2px;
 }
 .card-title{
   font-size: medium;
+  margin-left: 2px;
 }
 
 .card-body {
@@ -58,6 +60,7 @@ mounted(){
 }
 
 .btn {
+  margin-left: 2px;
   font-size: x-small;
   text-align: center;
 }
@@ -87,4 +90,16 @@ mounted(){
       transform: scale(1);
     }
   }
+
+@media screen and (max-width: 600px) {
+  #cards {
+    margin-left: -1.6rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #cards {
+    margin-left: -3rem;
+  }
+}
 </style>

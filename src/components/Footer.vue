@@ -1,16 +1,17 @@
 <template>
-    <footer>
-      <ul class="social-icons">
-        <li>&copy;</li>
-        <li>{{ currentYear }}</li>
-        <li>Asithandile Tyulu</li>
-      </ul>
-      <ul class="social-icons">
-        <li><a href="https://www.linkedin.com/in/asithandile-tyulu-a12006171/" data-location="LinkedIn" class="fa fa-linkedin"></a></li>
-        <li><a href="https://github.com/AsithandileNyjah" data-location="GitHub" class="fa fa-github"></a></li>
-      </ul>
-    </footer>
-  </template>
+  <footer>
+    <ul class="social-icons">
+      <li>&copy;</li>
+      <li>{{ currentYear }}</li>
+      <li>Asithandile Tyulu</li>
+    </ul>
+    <ul class="social-icons">
+      <li><a href="https://www.linkedin.com/in/asithandile-tyulu-a12006171/" data-location="LinkedIn" class="social-icon"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/AsithandileNyjah" data-location="GitHub" class="social-icon"><i class="fab fa-github"></i></a></li>
+    </ul>
+  </footer>
+</template>
+
   
   <script>
   export default {
@@ -90,7 +91,17 @@ footer{
     content: "\f09b";
 }
 
-.fa-twitter:before {
-    content: "\f099";
+
+@media screen and (max-width: 600px) {
+  footer {
+    width: 120%;
+  }
 }
+
+@media screen and (max-width: 300px) {
+  footer {
+    width: 120%;
+  }
+}
+
 </style>
